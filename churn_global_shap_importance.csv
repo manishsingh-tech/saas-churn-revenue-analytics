@@ -1,0 +1,13 @@
+Feature,Mean_Absolute_SHAP
+Is_Monthly_Contract,0.95749074
+Tenure_Months,0.46752763
+Total_Support_Tickets,0.3521327
+Payment_Delay_Days,0.31663656
+Monthly_Charges,0.1789
+Monetary_Value,0.17641151
+Support_Ticket_Ratio,0.15388596
+Risk_Payment_Interaction,0.13736288
+Login_Frequency_Days,0.098953106
+Is_Enterprise,0.0753149
+Frequency_Score,0.0
+Recency_Score,0.0

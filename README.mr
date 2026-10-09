@@ -1,0 +1,53 @@
+# SaaS Churn & Revenue Risk Intelligence Platform
+
+An end-to-end Data Science and Machine Learning analytics suite built to predict customer churn, uncover root behavioral drivers using explainable AI (SHAP), quantify financial exposure (Revenue-at-Risk & LTV), and optimize proactive retention strategies with proven positive ROI.
+
+---
+
+## 🚀 Executive Summary & Business Impact
+In the SaaS subscription economy, losing high-value accounts directly harms ARR (Annual Recurring Revenue). This platform transitions customer success teams from reactive firefighting to predictive retention by:
+- **Predicting Churn Risk**: Utilizing an optimized XGBoost classifier with robust feature engineering.
+- **Explainable AI (SHAP)**: Identifying exact behavioral triggers (such as contract type, tenure, and support ticket spikes) driving churn.
+- **Financial Quantification**: Calculating individual customer lifetime value (LTV) and total portfolio **Revenue-at-Risk**.
+- **Prescriptive ROI Simulation**: Demonstrating a net positive financial impact through targeted retention interventions.
+
+---
+
+## 🛠️ Core Tech Stack
+- **Programming Language**: Python
+- **Data Engineering & SQL**: Pandas, NumPy, SQLite (Analytical Base Table Extraction)
+- **Machine Learning**: Scikit-Learn, XGBoost Classifier
+- **Model Interpretability**: SHAP (SHapley Additive exPlanations)
+- **Financial Analytics**: Custom LTV & Revenue-at-Risk Modeling Engine
+- **Deployment & UI**: Streamlit Interactive Web Dashboard
+
+---
+
+## 📊 Key Analytical Findings & Results
+- **Model Performance**: Achieved a robust **ROC-AUC score of ~0.75+** on production-grade behavioral data.
+- **Top Churn Drivers**: 
+  1. `Is_Monthly_Contract` (Monthly subscribers show significantly higher churn volatility).
+  2. `Tenure_Months` (Newer cohorts within the first 12 months present the highest risk).
+  3. `Total_Support_Tickets` (Unresolved or frequent support friction accelerates churn).
+- **Financial Exposure**: Quantified total portfolio **Revenue-at-Risk** across enterprise and SMB segments.
+- **Campaign ROI**: Simulated targeted interventions yielding a positive **Net Financial Impact** after accounting for retention discounts/costs.
+
+---
+
+## 📁 Repository Structure
+```text
+PROJECT-CHURN-ANALYTICS/
+│
+├── churn_pipeline.py            # Data loading, schema validation, cleaning & SQLite ABT extraction
+├── churn_features.py            # RFM & advanced behavioral feature engineering
+├── churn_modeling.py            # Baseline Logistic Regression & XGBoost training & evaluation
+├── churn_shap_analysis.py       # Global & local SHAP interpretability script
+├── churn_financial_impact.py    # LTV, Revenue-at-Risk & Net Financial Impact simulation
+├── app.py                       # Interactive Streamlit Web Dashboard
+│
+├── churn_analytics.db           # SQLite Database backend
+├── churn_analytical_base_table.csv # Cleaned ABT dataset
+├── churn_features_engineered.csv   # Feature-engineered dataset
+├── churn_financial_report.csv      # Financial impact & risk report
+├── churn_xgb_model.pkl          # Trained XGBoost model artifact
+└── feature_scaler.pkl           # Standard Scaler artifact
