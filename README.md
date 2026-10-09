@@ -4,7 +4,7 @@ An end-to-end Data Science and Machine Learning analytics suite built to predict
 
 ---
 
-## 🚀 Executive Summary & Business Impact
+##  Executive Summary & Business Impact
 In the SaaS subscription economy, losing high-value accounts directly harms ARR (Annual Recurring Revenue). This platform transitions customer success teams from reactive firefighting to predictive retention by:
 - **Predicting Churn Risk**: Utilizing an optimized XGBoost classifier with robust feature engineering.
 - **Explainable AI (SHAP)**: Identifying exact behavioral triggers (such as contract type, tenure, and support ticket spikes) driving churn.
@@ -13,7 +13,7 @@ In the SaaS subscription economy, losing high-value accounts directly harms ARR 
 
 ---
 
-## 🛠️ Core Tech Stack
+##  Core Tech Stack
 - **Programming Language**: Python
 - **Data Engineering & SQL**: Pandas, NumPy, SQLite (Analytical Base Table Extraction)
 - **Machine Learning**: Scikit-Learn, XGBoost Classifier
@@ -23,7 +23,7 @@ In the SaaS subscription economy, losing high-value accounts directly harms ARR 
 
 ---
 
-## 📊 Key Analytical Findings & Results
+##  Key Analytical Findings & Results
 - **Model Performance**: Achieved a robust **ROC-AUC score of ~0.75+** on production-grade behavioral data.
 - **Top Churn Drivers**: 
   1. `Is_Monthly_Contract` (Monthly subscribers show significantly higher churn volatility).
@@ -34,7 +34,7 @@ In the SaaS subscription economy, losing high-value accounts directly harms ARR 
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 ```text
 PROJECT-CHURN-ANALYTICS/
 │
